@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public long generateRandom(long min, long max) {
+        max = max + 1;
         random = (System.currentTimeMillis() % 1000); // will return last 3 digits of current milliseconds
         random = (System.currentTimeMillis() / random); // will return large random number
         random =  (random % (max-min)) + min; // will return random number in range
