@@ -36,19 +36,14 @@ public class MainActivity extends AppCompatActivity {
                 } else if (min == max) {
                     answer.setText(min + "");
                 } else {
-                    Toast.makeText(getApplication(), "Max value should not be smaller then min value",
-                            Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplication(), "Max value should not be smaller then min value", Toast.LENGTH_LONG).show();
                 }
             }
         });
     }
 
     public long generateRandom(long min, long max) {
-
-        //do {
-            random =  ((System.currentTimeMillis()) % max) + min;
-        //} while (random > max || random < min);
-
+        random =  ((System.currentTimeMillis()) % max) + min;
         if (random > max) random = random - min;
 
         return random;
