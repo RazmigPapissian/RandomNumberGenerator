@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText inputMin, inputMax;
     private TextView answer;
 
-    private long min, max, random, last;
+    private long min, max, random;
 
 
     @Override
